@@ -176,9 +176,10 @@ public class Model {
 		}
 		return toStringAbbrAcids;
 	}
-
+	
+	
 	/**
-	 * Gets the abbreviation of the amino acids for the 1st strand in the
+	 * Gets the abbreviation of the amino acids for the 2nd strand in the
 	 * comparison
 	 * 
 	 * @return the amino acid abbreviations
@@ -227,8 +228,7 @@ public class Model {
 	}
 
 	/**
-	 * Compares the attributes of 2 dna base strands for differences in Amino
-	 * Acids
+	 * Compares  2 dna base strands for differences in Amino Acids
 	 * 
 	 * @param strand1
 	 *            first strand
@@ -237,7 +237,6 @@ public class Model {
 	 * @return amino acid position where the strands are differences in AA
 	 */
 	public static ArrayList<Integer> compareAcids(String strand1, String strand2) {
-	//	System.out.println("hur" + strand1 + "     " + strand2);
 		compareAcids1 = new ArrayList<AminoAcids>();
 		compareAcids2 = new ArrayList<AminoAcids>();
 		ArrayList<Integer> spots = new ArrayList<Integer>();
@@ -246,12 +245,10 @@ public class Model {
 		compareAcids2 = getAcids(strand2);
 		int acid1Size = compareAcids1.size();
 		int acid2Size = compareAcids2.size();
-	//	System.out.println("1: " + compareAcids1);
-	//	System.out.println("2: " + compareAcids2);
+
 
 		if (acid1Size <= acid2Size) {
 			for (int i = 0; i < acid1Size; i++) {
-			//	System.out.println("one");
 				if (!(compareAcids1.get(i).getAbbreviation()
 						.equals(compareAcids2.get(i).getAbbreviation()))) {
 					spots.add(i + 1);
@@ -259,14 +256,12 @@ public class Model {
 			}
 		} else {
 			for (int i = 0; i < acid2Size; i++) {
-			//	System.out.println("two");
 				if (!(compareAcids1.get(i).getAbbreviation()
 						.equals(compareAcids2.get(i).getAbbreviation()))) {
 					spots.add(i + 1);
 				}
 			}
 		}
-	//	System.out.println(compareAcids1);
 		return spots;
 	}
 
