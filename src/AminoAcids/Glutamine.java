@@ -1,14 +1,16 @@
+package AminoAcids;
 
-public class Cysteine implements AminoAcids{
+
+public class Glutamine implements AminoAcids{
 	private String name;
-	public Cysteine()
+	public Glutamine()
 	{
 	}
 	
 	@Override
 	public String getName()
 	{
-		name = "Cysteine";
+		name = "Glutamine";
 		return name;
 	}
 	
@@ -19,6 +21,6 @@ public class Cysteine implements AminoAcids{
 
 	@Override
 	public String getAbbreviation() {
-		return "Cys";
+		return "Gln";
 	}
 }

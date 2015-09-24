@@ -240,7 +240,7 @@ public class GUI extends JPanel implements ActionListener {
 							// for second strand
 						} else {
 							compare1Formal = compareStrand1Raw;
-							System.out.println("here 1: " + compare1Formal);
+					//		System.out.println("here 1: " + compare1Formal);
 							JLabel tLabel2 = new JLabel(
 									"Second Strand (5' -> 3':");
 							compareText2 = new JTextField("");

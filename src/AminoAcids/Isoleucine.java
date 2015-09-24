@@ -1,15 +1,16 @@
+package AminoAcids;
 
-public class Phenylalanine implements AminoAcids {
 
+public class Isoleucine implements AminoAcids{
 	private String name;
-	public Phenylalanine()
+	public Isoleucine()
 	{
 	}
 	
 	@Override
 	public String getName()
 	{
-		name = "Phenylalanine";
+		name = "Isoleucine";
 		return name;
 	}
 	
@@ -20,6 +21,6 @@ public class Phenylalanine implements AminoAcids {
 
 	@Override
 	public String getAbbreviation() {
-		return "Phe";
+		return "Ile";
 	}
 }

@@ -1,24 +1,27 @@
+package AminoAcids;
 
-public class Asparagine implements AminoAcids{
+
+public class Leucine implements AminoAcids{
+
 	private String name;
-	public Asparagine()
+	public Leucine()
 	{
 	}
 	
 	@Override
 	public String getName()
 	{
-		name = "Asparagine";
+		name = "Leucine";
 		return name;
 	}
 	
 	@Override
 	public String getAttribute(){
-		return "Polar";
+		return "NonPolar";
 	}
 
 	@Override
 	public String getAbbreviation() {
-		return "Asn";
+		return "Leu";
 	}
 }

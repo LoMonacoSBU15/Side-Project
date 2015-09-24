@@ -1,24 +1,26 @@
+package AminoAcids;
 
-public class Stop implements AminoAcids{
+
+public class Methionine implements AminoAcids{
 	private String name;
-	public Stop()
+	public Methionine()
 	{
 	}
 	
 	@Override
 	public String getName()
 	{
-		name = "Stop Codon";
+		name = "Methionine";
 		return name;
 	}
 	
 	@Override
 	public String getAttribute(){
-		return "Stop";
+		return "NonPolar";
 	}
 
 	@Override
 	public String getAbbreviation() {
-		return "Stop";
+		return "Met";
 	}
 }

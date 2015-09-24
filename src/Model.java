@@ -1,6 +1,31 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import AminoAcids.*;
+//import AminoAcids.Alanine;
+//import AminoAcids.AminoAcids;
+//import AminoAcids.Arginine;
+//import AminoAcids.Asparagine;
+//import AminoAcids.AsparticAcid;
+//import AminoAcids.Cysteine;
+//import AminoAcids.GlutamicAcid;
+//import AminoAcids.Glutamine;
+//import AminoAcids.Glycine;
+//import AminoAcids.Histidine;
+//import AminoAcids.Isoleucine;
+//import AminoAcids.Leucine;
+//import AminoAcids.Lysine;
+//import AminoAcids.Methionine;
+//import AminoAcids.Phenylalanine;
+//import AminoAcids.Proline;
+//import AminoAcids.Serine;
+//import AminoAcids.Start;
+//import AminoAcids.Stop;
+//import AminoAcids.Threonine;
+//import AminoAcids.Tryptophan;
+//import AminoAcids.Tyrosine;
+//import AminoAcids.Valine;
+
 /**
  * Handles the heavy lifting of the program as far as converting elements and
  * creating data structures
@@ -212,7 +237,7 @@ public class Model {
 	 * @return amino acid position where the strands are differences in AA
 	 */
 	public static ArrayList<Integer> compareAcids(String strand1, String strand2) {
-		System.out.println("hur" + strand1 + "     " + strand2);
+	//	System.out.println("hur" + strand1 + "     " + strand2);
 		compareAcids1 = new ArrayList<AminoAcids>();
 		compareAcids2 = new ArrayList<AminoAcids>();
 		ArrayList<Integer> spots = new ArrayList<Integer>();
@@ -221,12 +246,12 @@ public class Model {
 		compareAcids2 = getAcids(strand2);
 		int acid1Size = compareAcids1.size();
 		int acid2Size = compareAcids2.size();
-		System.out.println("1: " + compareAcids1);
-		System.out.println("2: " + compareAcids2);
+	//	System.out.println("1: " + compareAcids1);
+	//	System.out.println("2: " + compareAcids2);
 
 		if (acid1Size <= acid2Size) {
 			for (int i = 0; i < acid1Size; i++) {
-				System.out.println("one");
+			//	System.out.println("one");
 				if (!(compareAcids1.get(i).getAbbreviation()
 						.equals(compareAcids2.get(i).getAbbreviation()))) {
 					spots.add(i + 1);
@@ -234,14 +259,14 @@ public class Model {
 			}
 		} else {
 			for (int i = 0; i < acid2Size; i++) {
-				System.out.println("two");
+			//	System.out.println("two");
 				if (!(compareAcids1.get(i).getAbbreviation()
 						.equals(compareAcids2.get(i).getAbbreviation()))) {
 					spots.add(i + 1);
 				}
 			}
 		}
-		System.out.println(compareAcids1);
+	//	System.out.println(compareAcids1);
 		return spots;
 	}
 

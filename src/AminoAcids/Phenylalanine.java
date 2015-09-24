@@ -1,24 +1,27 @@
+package AminoAcids;
 
-public class Arginine implements AminoAcids{
+
+public class Phenylalanine implements AminoAcids {
+
 	private String name;
-	public Arginine()
+	public Phenylalanine()
 	{
 	}
 	
 	@Override
 	public String getName()
 	{
-		name = "Arginine";
+		name = "Phenylalanine";
 		return name;
 	}
 	
 	@Override
 	public String getAttribute(){
-		return "Basic";
+		return "NonPolar";
 	}
 
 	@Override
 	public String getAbbreviation() {
-		return "Arg";
+		return "Phe";
 	}
 }

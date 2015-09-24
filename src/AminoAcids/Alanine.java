@@ -1,3 +1,5 @@
+package AminoAcids;
+
 
 public class Alanine implements AminoAcids{
 	private String name;

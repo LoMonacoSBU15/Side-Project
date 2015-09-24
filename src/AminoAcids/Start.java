@@ -1,24 +1,28 @@
+package AminoAcids;
 
-public class AsparticAcid implements AminoAcids{
+
+public class Start implements AminoAcids{
 	private String name;
-	public AsparticAcid()
+	public Start()
 	{
 	}
 	
 	@Override
 	public String getName()
 	{
-		name = "Aspartic Acid";
+		name = "Start";
 		return name;
 	}
 	
 	@Override
 	public String getAttribute(){
-		return "Acidic";
+		return "Start";
 	}
 
 	@Override
 	public String getAbbreviation() {
-		return "Asp";
+		return "Start";
+		
 	}
+
 }

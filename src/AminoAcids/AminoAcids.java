@@ -1,3 +1,4 @@
+package AminoAcids;
 public interface AminoAcids {
     
     public String getAbbreviation();

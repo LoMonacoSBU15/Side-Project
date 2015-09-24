@@ -1,24 +1,27 @@
+package AminoAcids;
 
-public class Lysine implements AminoAcids{
+
+public class GlutamicAcid implements AminoAcids{
 	private String name;
-	public Lysine()
+	
+	public GlutamicAcid()
 	{
 	}
 	
 	@Override
 	public String getName()
 	{
-		name = "Lysine";
+		name = "GlutamicAcid";
 		return name;
 	}
 	
 	@Override
 	public String getAttribute(){
-		return "Basic";
+		return "Acidic";
 	}
 
 	@Override
 	public String getAbbreviation() {
-		return "Lys";
+		return "Glu";
 	}
 }

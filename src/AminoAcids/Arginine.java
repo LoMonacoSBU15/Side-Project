@@ -1,24 +1,26 @@
+package AminoAcids;
 
-public class Serine implements AminoAcids{
+
+public class Arginine implements AminoAcids{
 	private String name;
-	public Serine()
+	public Arginine()
 	{
 	}
 	
 	@Override
 	public String getName()
 	{
-		name = "Serine";
+		name = "Arginine";
 		return name;
 	}
 	
 	@Override
 	public String getAttribute(){
-		return "Polar";
+		return "Basic";
 	}
 
 	@Override
 	public String getAbbreviation() {
-		return "Ser";
+		return "Arg";
 	}
 }

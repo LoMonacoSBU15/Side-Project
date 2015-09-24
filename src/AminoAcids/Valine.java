@@ -1,14 +1,16 @@
+package AminoAcids;
 
-public class Glycine implements AminoAcids{
+
+public class Valine implements AminoAcids{
 	private String name;
-	public Glycine()
+	public Valine()
 	{
 	}
 	
 	@Override
 	public String getName()
 	{
-		name = "Glycine";
+		name = "Valine";
 		return name;
 	}
 	
@@ -19,6 +21,6 @@ public class Glycine implements AminoAcids{
 
 	@Override
 	public String getAbbreviation() {
-		return "Gly";
+		return "Val";
 	}
 }

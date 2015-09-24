@@ -1,24 +1,26 @@
+package AminoAcids;
 
-public class Threonine implements AminoAcids{
+
+public class AsparticAcid implements AminoAcids{
 	private String name;
-	public Threonine()
+	public AsparticAcid()
 	{
 	}
 	
 	@Override
 	public String getName()
 	{
-		name = "Threonine";
+		name = "Aspartic Acid";
 		return name;
 	}
 	
 	@Override
 	public String getAttribute(){
-		return "Polar";
+		return "Acidic";
 	}
 
 	@Override
 	public String getAbbreviation() {
-		return "Thr";
+		return "Asp";
 	}
 }

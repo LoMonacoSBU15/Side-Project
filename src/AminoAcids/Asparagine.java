@@ -1,24 +1,26 @@
+package AminoAcids;
 
-public class Proline implements AminoAcids{
+
+public class Asparagine implements AminoAcids{
 	private String name;
-	public Proline()
+	public Asparagine()
 	{
 	}
 	
 	@Override
 	public String getName()
 	{
-		name = "Proline";
+		name = "Asparagine";
 		return name;
 	}
 	
 	@Override
 	public String getAttribute(){
-		return "NonPolar";
+		return "Polar";
 	}
 
 	@Override
 	public String getAbbreviation() {
-		return "Pro";
+		return "Asn";
 	}
 }

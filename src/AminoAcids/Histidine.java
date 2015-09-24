@@ -1,24 +1,26 @@
+package AminoAcids;
 
-public class Methionine implements AminoAcids{
+
+public class Histidine implements AminoAcids{
 	private String name;
-	public Methionine()
+	public Histidine()
 	{
 	}
 	
 	@Override
 	public String getName()
 	{
-		name = "Methionine";
+		name = "Histidine";
 		return name;
 	}
 	
 	@Override
 	public String getAttribute(){
-		return "NonPolar";
+		return "Basic";
 	}
 
 	@Override
 	public String getAbbreviation() {
-		return "Met";
+		return "His";
 	}
 }

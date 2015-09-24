@@ -1,14 +1,16 @@
+package AminoAcids;
 
-public class Glutamine implements AminoAcids{
+
+public class Serine implements AminoAcids{
 	private String name;
-	public Glutamine()
+	public Serine()
 	{
 	}
 	
 	@Override
 	public String getName()
 	{
-		name = "Glutamine";
+		name = "Serine";
 		return name;
 	}
 	
@@ -19,6 +21,6 @@ public class Glutamine implements AminoAcids{
 
 	@Override
 	public String getAbbreviation() {
-		return "Gln";
+		return "Ser";
 	}
 }

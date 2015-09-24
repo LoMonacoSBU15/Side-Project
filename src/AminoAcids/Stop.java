@@ -1,24 +1,26 @@
+package AminoAcids;
 
-public class Valine implements AminoAcids{
+
+public class Stop implements AminoAcids{
 	private String name;
-	public Valine()
+	public Stop()
 	{
 	}
 	
 	@Override
 	public String getName()
 	{
-		name = "Valine";
+		name = "Stop Codon";
 		return name;
 	}
 	
 	@Override
 	public String getAttribute(){
-		return "NonPolar";
+		return "Stop";
 	}
 
 	@Override
 	public String getAbbreviation() {
-		return "Val";
+		return "Stop";
 	}
 }

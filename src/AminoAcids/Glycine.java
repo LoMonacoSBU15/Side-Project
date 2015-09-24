@@ -1,14 +1,16 @@
+package AminoAcids;
 
-public class Isoleucine implements AminoAcids{
+
+public class Glycine implements AminoAcids{
 	private String name;
-	public Isoleucine()
+	public Glycine()
 	{
 	}
 	
 	@Override
 	public String getName()
 	{
-		name = "Isoleucine";
+		name = "Glycine";
 		return name;
 	}
 	
@@ -19,6 +21,6 @@ public class Isoleucine implements AminoAcids{
 
 	@Override
 	public String getAbbreviation() {
-		return "Ile";
+		return "Gly";
 	}
 }

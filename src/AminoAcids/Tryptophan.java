@@ -1,26 +1,26 @@
+package AminoAcids;
 
-public class Start implements AminoAcids{
+
+public class Tryptophan implements AminoAcids{
 	private String name;
-	public Start()
+	public Tryptophan()
 	{
 	}
 	
 	@Override
 	public String getName()
 	{
-		name = "Start";
+		name = "Tryptophan";
 		return name;
 	}
 	
 	@Override
 	public String getAttribute(){
-		return "Start";
+		return "NonPolar";
 	}
 
 	@Override
 	public String getAbbreviation() {
-		return "Start";
-		
+		return "Trp";
 	}
-
 }

@@ -1,24 +1,26 @@
+package AminoAcids;
 
-public class Histidine implements AminoAcids{
+
+public class Proline implements AminoAcids{
 	private String name;
-	public Histidine()
+	public Proline()
 	{
 	}
 	
 	@Override
 	public String getName()
 	{
-		name = "Histidine";
+		name = "Proline";
 		return name;
 	}
 	
 	@Override
 	public String getAttribute(){
-		return "Basic";
+		return "NonPolar";
 	}
 
 	@Override
 	public String getAbbreviation() {
-		return "His";
+		return "Pro";
 	}
 }

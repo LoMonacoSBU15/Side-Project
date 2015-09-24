@@ -1,25 +1,26 @@
+package AminoAcids;
 
-public class Leucine implements AminoAcids{
 
+public class Lysine implements AminoAcids{
 	private String name;
-	public Leucine()
+	public Lysine()
 	{
 	}
 	
 	@Override
 	public String getName()
 	{
-		name = "Leucine";
+		name = "Lysine";
 		return name;
 	}
 	
 	@Override
 	public String getAttribute(){
-		return "NonPolar";
+		return "Basic";
 	}
 
 	@Override
 	public String getAbbreviation() {
-		return "Leu";
+		return "Lys";
 	}
 }

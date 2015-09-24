@@ -1,25 +1,26 @@
+package AminoAcids;
 
-public class GlutamicAcid implements AminoAcids{
+
+public class Threonine implements AminoAcids{
 	private String name;
-	
-	public GlutamicAcid()
+	public Threonine()
 	{
 	}
 	
 	@Override
 	public String getName()
 	{
-		name = "GlutamicAcid";
+		name = "Threonine";
 		return name;
 	}
 	
 	@Override
 	public String getAttribute(){
-		return "Acidic";
+		return "Polar";
 	}
 
 	@Override
 	public String getAbbreviation() {
-		return "Glu";
+		return "Thr";
 	}
 }
